@@ -2510,7 +2510,7 @@ export class Song {
         this.patternInstruments = false;
 
         this.title = "Unnamed";
-        document.title = EditorConfig.versionDisplayName;
+        document.title = this.title + " - " + EditorConfig.versionDisplayName;
 
         if (andResetChannels) {
             this.pitchChannelCount = 3;
